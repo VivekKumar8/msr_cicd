@@ -17,7 +17,7 @@ pipeline {
        			// echo " The environment inside script is ${params.WmCloudStreamsAnalytics}"
 			 WmFlatFileName="WmFlatFile" 
     			   }
-			   }
+			   
 		    	if (params.WmJDBCAdapter == true) {
        			// echo " The environment inside script is ${params.WmJDBCAdapter}"
 			 WmJDBCAdapterName="WmJDBCAdapter" 
