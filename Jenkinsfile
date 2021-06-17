@@ -1,5 +1,5 @@
-def WmFlatFileName = "xxxx"
-def WmJDBCAdapterName = "xxxx"
+def WmFlatFileName = ""
+def WmJDBCAdapterName = ""
 pipeline {
     agent any 
 
