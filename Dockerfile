@@ -9,8 +9,8 @@ ARG WmFlatFile
 #ENV WmCloudStreamsAnalytics1 /packages/wMPackages/WmCloudStreamsAnalytics
 #ENV WmCloudStreamsAnalytics1=${WmCloudStreamsAnalytics}
 
-#RUN echo "Argument is $FPATH"
-#RUN echo "Argument is $WmCloudStreamsAnalytics"
+RUN echo "ArgumentFlat is $WmFlatFile"
+RUN echo "ArgumentJDBC is $WmJDBCAdapter"
 #RUN echo "Argument is $WmCloudStreamsAnalytics1"
 
 #RUN if [ "$WmCloudStreamsAnalytics" = true ] ; then \
