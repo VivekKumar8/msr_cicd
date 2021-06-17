@@ -1,3 +1,3 @@
 #!/bin/sh
 #
-docker build -t microsvcruntime:v1 -f Dockerfile . --build-arg WmJDBCAdapter=$1 --build-arg WmCloudStreamsAnalytics=$2
+docker build -t microsvcruntime:v1 -f Dockerfile . --build-arg WmJDBCAdapter=$1 --build-arg WmFlatFile=$2
