@@ -13,10 +13,10 @@ pipeline {
             steps {
 		    //echo " The environment is ${params.WmFlatFile}"
 		    script {
-   			 if (params.WmFlatFile == false) {
+   			 if (params.WmFlatFile == true) {
        			// echo " The environment inside script is ${params.WmCloudStreamsAnalytics}"
-				 echo "/packages/wMPackages/WmFlatFile" > .dockerignore
-			// WmFlatFileName="WmFlatFile" 
+				 //echo "/packages/wMPackages/WmFlatFile" > .dockerignore
+			 WmFlatFileName="WmFlatFile" 
     			   }
 		    	if (params.WmJDBCAdapter == true) {
        			// echo " The environment inside script is ${params.WmJDBCAdapter}"
