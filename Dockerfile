@@ -30,14 +30,15 @@ RUN echo "ArgumentJDBC is $WmJDBCAdapter"
 COPY /packages/customPackages /opt/softwareag/IntegrationServer/packages
 #COPY /packages/wMPackages/WmFlatFile /opt/softwareag/IntegrationServer/packages/WmFlatFile
 #COPY /packages/wMPackages/${WmJDBCAdapter} /opt/softwareag/IntegrationServer/packages/${WmJDBCAdapter}
+COPY /packages/wMPackages/ /opt/softwareag/IntegrationServer/packages/
 RUN if [ "$WmFlatFile" = "X" ] ; then \
- echo arg is $WmFlatFile; \
- rm -r /packages/wMPackages/WmFlatFile \
+ 
+ rm -r /opt/softwareag/IntegrationServer/packages/WmFlatFile \
 else \
  echo arg is $WmFlatFile; \
  
 fi
-COPY /packages/wMPackages/ /opt/softwareag/IntegrationServer/packages/
+#COPY /packages/wMPackages/ /opt/softwareag/IntegrationServer/packages/
 
 #COPY /packages/wMPackages/${WmJDBCAdapter} /packages/wMPackages/${WmFlatFile} /opt/softwareag/IntegrationServer/packages/
 #COPY /packages/wMPackages/${FPATH} /opt/softwareag/IntegrationServer/packages/${FPATH}
