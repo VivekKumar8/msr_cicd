@@ -35,8 +35,7 @@ RUN if [ "$WmFlatFile" = "X" ] ; then \
  
  rm -r /opt/softwareag/IntegrationServer/packages/WmFlatFile \
 else \
- echo arg is $WmFlatFile; \
- 
+  
 fi
 #COPY /packages/wMPackages/ /opt/softwareag/IntegrationServer/packages/
 
