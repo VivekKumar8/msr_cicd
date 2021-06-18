@@ -17,7 +17,7 @@ pipeline {
        			// echo " The environment inside script is ${params.WmCloudStreamsAnalytics}"
 				 //echo "/packages/wMPackages/WmFlatFile" > .dockerignore
 			// WmFlatFileName="WmFlatFile" 
-				 rm -rf ${WORKSPACE}/packages/wMPackages/WmFlatFile
+				 rm -rf "${WORKSPACE}/packages/wMPackages/WmFlatFile"
     			   }
 		    	if (params.WmJDBCAdapter == true) {
        			// echo " The environment inside script is ${params.WmJDBCAdapter}"
