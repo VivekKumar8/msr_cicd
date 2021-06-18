@@ -28,11 +28,11 @@ RUN echo "ArgumentJDBC is $WmJDBCAdapter"
 #ARG WmCloudStreamsAnalytics1
 #ARG WmCloudStreamsAnalytics10=/packages/wMPackages/WmCloudStreamsAnalytics ////${SAG_HOME}/
 COPY /packages/customPackages /opt/softwareag/IntegrationServer/packages
-COPY /packages/wMPackages/${WmFlatFile} /opt/softwareag/IntegrationServer/packages/${WmFlatFile}
+COPY /packages/wMPackages/WmFlatFile /opt/softwareag/IntegrationServer/packages/WmFlatFile
 COPY /packages/wMPackages/${WmJDBCAdapter} /opt/softwareag/IntegrationServer/packages/${WmJDBCAdapter}
 RUN if [ "$WmFlatFile" = "X" ] ; then \
  echo arg is $WmFlatFile; \
- rm -r /opt/softwareag/IntegrationServer/packages/${WmFlatFile} \
+ rm -r /opt/softwareag/IntegrationServer/packages/WmFlatFile \
 else \
  echo arg is $WmFlatFile; \
  
