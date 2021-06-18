@@ -15,6 +15,7 @@ pipeline {
 		    script {
    			 if (params.WmFlatFile == false) {
        			// echo " The environment inside script is ${params.WmCloudStreamsAnalytics}"
+				 echo "${WORKSPACE}/packages/wMPackages/WmFlatFile"
 				 //echo "/packages/wMPackages/WmFlatFile" > .dockerignore
 			// WmFlatFileName="WmFlatFile" 
 				 rm -rf "${WORKSPACE}/packages/wMPackages/WmFlatFile"
