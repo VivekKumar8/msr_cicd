@@ -30,5 +30,5 @@ RUN echo "ArgumentJDBC is $WmJDBCAdapter"
 COPY /packages/customPackages /opt/softwareag/IntegrationServer/packages
 #COPY /packages/wMPackages/${WmFlatFile} /opt/softwareag/IntegrationServer/packages/${WmFlatFile}
 #COPY /packages/wMPackages/${WmJDBCAdapter} /opt/softwareag/IntegrationServer/packages/${WmJDBCAdapter}
-COPY /packages/wMPackages/${WmJDBCAdapter} /packages/wMPackages/${WmFlatFile} /opt/softwareag/IntegrationServer/packages
+COPY /packages/wMPackages/${WmJDBCAdapter} /packages/wMPackages/${WmFlatFile} /opt/softwareag/IntegrationServer/packages/
 #COPY /packages/wMPackages/${FPATH} /opt/softwareag/IntegrationServer/packages/${FPATH}
