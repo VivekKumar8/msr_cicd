@@ -35,8 +35,7 @@ RUN if [ "$WmFlatFile" = "X" ] ; then \
  
  rm -r /opt/softwareag/IntegrationServer/packages/WmFlatFile \
 
-  
-fi
+ 
 #COPY /packages/wMPackages/ /opt/softwareag/IntegrationServer/packages/
 
 #COPY /packages/wMPackages/${WmJDBCAdapter} /packages/wMPackages/${WmFlatFile} /opt/softwareag/IntegrationServer/packages/
