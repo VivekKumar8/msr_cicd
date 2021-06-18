@@ -34,7 +34,7 @@ COPY /packages/wMPackages/ /opt/softwareag/IntegrationServer/packages/
 RUN if [ "$WmFlatFile" = "X" ] ; then \
  
  rm -r /opt/softwareag/IntegrationServer/packages/WmFlatFile \
-else \
+
   
 fi
 #COPY /packages/wMPackages/ /opt/softwareag/IntegrationServer/packages/
