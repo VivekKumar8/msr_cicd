@@ -2,11 +2,6 @@ pipeline {
     agent any 
 
     stages {
-		stage('Clean'){
-            steps {
-               cleanWs()
-            }
-        }
         stage('Initialize'){
             steps {
                 sh 'chmod -R 777 ${WORKSPACE}'
@@ -29,6 +24,11 @@ pipeline {
 		stage('Deploy'){
             steps {
                 sh '${WORKSPACE}/Deploy.sh'
+            }
+        }
+		stage('Clean'){
+            steps {
+               cleanWs()
             }
         }
     }
