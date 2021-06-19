@@ -27,7 +27,11 @@ RUN echo "ArgumentJDBC is $WmJDBCAdapter"
 #COPY /packages/wMPackages/WmCloudStreamsAnalytics /opt/softwareag/IntegrationServer/packages
 #ARG WmCloudStreamsAnalytics1
 #ARG WmCloudStreamsAnalytics10=/packages/wMPackages/WmCloudStreamsAnalytics ////${SAG_HOME}/
-COPY /packages/wMPackages/${WmFlatFile} /opt/softwareag/IntegrationServer/packages/${WmFlatFile}
-COPY /packages/wMPackages/${WmJDBCAdapter} /opt/softwareag/IntegrationServer/packages/${WmJDBCAdapter}
-#COPY /packages/wMPackages/${FPATH} /opt/softwareag/IntegrationServer/packages/${FPATH}
 COPY /packages/customPackages /opt/softwareag/IntegrationServer/packages
+#COPY /packages/wMPackages/WmFlatFile /opt/softwareag/IntegrationServer/packages/WmFlatFile
+#COPY /packages/wMPackages/${WmJDBCAdapter} /opt/softwareag/IntegrationServer/packages/${WmJDBCAdapter}
+COPY /packages/wMPackages/ /opt/softwareag/IntegrationServer/packages/
+#COPY /packages/wMPackages/ /opt/softwareag/IntegrationServer/packages/
+
+#COPY /packages/wMPackages/${WmJDBCAdapter} /packages/wMPackages/${WmFlatFile} /opt/softwareag/IntegrationServer/packages/
+#COPY /packages/wMPackages/${FPATH} /opt/softwareag/IntegrationServer/packages/${FPATH}
