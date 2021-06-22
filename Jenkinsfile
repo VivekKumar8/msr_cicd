@@ -23,7 +23,7 @@ pipeline {
         }
 		stage('Deploy'){
             steps {
-                sh '${WORKSPACE}/Deploy.sh ${params.port}'
+                sh "${WORKSPACE}/Deploy.sh ${params.port}"
             }
         }
 		stage('Clean'){
